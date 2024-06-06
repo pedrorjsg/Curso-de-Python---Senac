@@ -1,0 +1,51 @@
+<script>
+//var valor1, valor2, operação, resultado;
+
+//valor1 = parseInt(prompt("Digite o valor"));
+//operação = parseInt(prompt("Qual operção? + , - , / , * "));
+//valor2 = parseInt(prompt("Digite o valor"));
+
+//resultado = valor1 + operação + valor2;
+//document.write(resultado);
+
+
+
+
+
+
+
+    var valor1, valor2, operacao, resultado;
+
+    // Solicita os valores e a operação ao usuário
+    valor1 = parseFloat(prompt("Digite o primeiro valor"));
+    
+    // Loop para garantir que o usuário insira uma operação válida
+    do {
+        operacao = prompt("Qual operação? + , - , / , * ");
+    } while (operacao !== "+" && operacao !== "-" && operacao !== "/" && operacao !== "*");
+    
+    valor2 = parseFloat(prompt("Digite o segundo valor"));
+
+    // Realiza a operação com base na escolha do usuário
+    switch (operacao) {
+        case "+":
+            resultado = valor1 + valor2;
+            break;
+        case "-":
+            resultado = valor1 - valor2;
+            break;
+        case "/":
+            resultado = valor1 / valor2;
+            break;
+        case "*":
+            resultado = valor1 * valor2;
+            break;
+        default:
+            resultado = "Operação inválida";
+    }
+
+    // Exibe o resultado
+    document.write("Resultado: " + resultado);
+
+
+</script>

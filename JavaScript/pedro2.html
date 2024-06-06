@@ -1,0 +1,27 @@
+<script>
+
+var time1, time2, gol1, gol2, resultado;
+
+time1 = prompt("Qual é o time 1?");
+gol1 = prompt("Quantos gols?");
+time2 = prompt("Qual é o time 2?");
+gol2 = prompt("Quantos gols?");
+
+parseInt(gol1 +gol2)
+
+
+if(gol1 == gol2){
+    resultado = "Empate";
+} else if (gol1 > gol2){
+        resultado = time1 + " Ganhou";
+}
+  else {
+      resultado = time2 + " Ganhou";
+}
+    
+
+
+document.write(time1 + " " + gol1 + " X " + time2 + " " + gol2 + "</br>");
+document.write(resultado);
+
+</script>
