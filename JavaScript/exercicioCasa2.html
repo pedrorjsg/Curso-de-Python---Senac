@@ -1,0 +1,46 @@
+<script>
+
+    var dolar,cotacao,reais;
+
+
+    functionsolicitarValor(mensagem) {
+
+         var  
+valor;
+
+        do {
+
+            valor =
+parseFloat(prompt(mensagem));
+
+            if (isNaN(valor))
+ {
+
+                alert("O valor digitado não é um número válido. Por favor, tente novamente.");
+
+            }
+
+        } while (isNaN(valor));
+
+        return
+valor;
+
+    }
+
+    var
+dolar =
+solicitarValor("Qual é a quantidade de dólares?");
+
+    var
+cotacao =
+solicitarValor("Cotação do dólar em reais hoje");
+
+
+    var
+reais =
+dolar *
+cotacao;
+
+    document.write("Valor em reais: R$ " + reais);
+  
+</script>

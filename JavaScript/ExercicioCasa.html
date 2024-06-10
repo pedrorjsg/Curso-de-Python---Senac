@@ -1,0 +1,50 @@
+<script>
+    var
+
+    function
+verificarValor(mensagem) {
+
+            var
+valor;
+
+            do{            
+
+                valor =
+parseInt(prompt(mensagem));
+
+                if(isNaN(valor))
+ {
+
+                alert("O valor digitado não é um numero. Tente novamente");
+
+                }
+
+            } while(isNaN(valor));
+
+            return
+valor;
+
+        }
+
+
+
+
+    valor =
+verificarValor("Qual o valor do produto ?");
+
+    prestações =
+verificarValor("Qual é a quantidade de parcelas?");
+
+
+
+
+    total=
+valor/prestações
+
+
+
+
+    document.write("O produto fica por </br>"+ prestações +"x de R$" +total);
+   
+
+</script>
