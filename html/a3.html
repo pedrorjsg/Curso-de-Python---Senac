@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Apresentação da tag DIV</title>
+
+    <script>
+        function emitirMensagem(){
+            document.write("<h1>oi, sou uma mensagem</h1>");
+        }
+
+        function emitirAlerta(event){
+            alert("Tecla digitada:   " + event.key);
+        }
+    </script>
+    <style>
+       /* p {
+            color: pink;
+            font-size: 50px; 
+        }
+
+        h1,h2 {
+            color:red;
+        }*/
+
+        #descrição{
+            background-color: green;
+        }
+
+        .exemplo{
+            font-size: 30px;
+            color: blue;
+        }
+    </style>
+</head>
+<body style="background-color: blueviolet;">
+    <p style="margin-top:20px; margin-left: 60px; color:red; font-size: 50px;"> Exemplo de HTML</p>
+    <h1> Exemplo de HTML</h1>
+    <h2>Sub Titulo</h2>
+    <h3 class="exemplo"> Outro Exemplo</h3>
+    <H4 class="exemplo"> Mais um exemplo</H4>
+    <div id="descrição" name="descrição"><p>Exemplo de html</p></div>
+    <input type="text" onkeypress="emitirAlerta(event);" id="exemplo" name="exemplo" placeholder="Digite aqui" >
+    <button id="botaoAqui" onclick="emitirMensagem();"> Clique aqui! </button>
+</body>
+</html>
