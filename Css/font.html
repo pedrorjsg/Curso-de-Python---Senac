@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font - CSS</title>
+
+    <style>
+        h1 {
+            color:blue;
+            font-family: Verdana;
+            font-size: 300%
+        }
+
+        p {
+            color:red;
+            font-family:courier;
+            font-size:160%;
+        }
+        p.one {
+            border-style: dotted;
+            border-width: 5px;
+        }
+        p.solid {
+            border-style: solid;
+            border-width: 10px;
+            border-color: green;
+        }
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+        p.alter{
+            border-top-style:solid;
+            border-bottom-style:solid;
+        }
+
+        .normal{
+            border: 2px solid red;
+        }
+        .r1{
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        .r2{
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        .r3{
+            border: 2px solid red;
+            border-radius: 12px;
+        }
+        .r4 {
+	    width: 100px;
+	    height: 100px;
+	    border-radius: 50%;
+	    overflow: hidden;
+	    float: left;
+	    margin: 15px;
+	    transition: 0.3s ease;
+        }
+
+            
+    
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Primeiro Parágrafo</h1>
+    <p>Outro Formato</p>
+
+    <h2>Propriedade border-style</h2>
+    <p class="one">Borda do tipo dotted.</p>
+    <p class="solid">Borda do tipo solid.</p>
+    <p class="mix">Bordas misturadas.</p>
+    <p class="alter">Bordas em lados específicos.</p>
+
+    <h2>Propriedade border</h2>
+
+    <p class="normal">Borda normal.</p>
+    <p class="r1"> Borda arrendodada.</p>
+    <p class="r2"> Borda um pouco mais arredondada.</p>
+    <p class="r3"> Borda totalmente arredondada.</p>
+
+    <p class="r4" >10</p>
+
+</body>
+</html>
