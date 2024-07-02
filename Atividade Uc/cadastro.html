@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-color: #7FFFD4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFF;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #008080; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 4px;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover {
+            background-color: #66CDAA;
+        }
+    </style>
+
+</head>
+    
+<body>
+    <div class="container">
+        <h1>Cadastro de clientes</h1>
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>  
+            Nome Completo:<br>
+            <input type="text" name="nome"> <br> 
+            Bairro:<br>
+            <input type="text" name="bairro"> <br>
+            Telefone:<br>
+            <input type="text" name="telefones" value="DDD + Nº"> <br>
+            Telefone:<br>
+            <input type="text" name="telefone" value="DDD + Nº"> <br>
+            <button><a href="./index.html">Confirmar</a></button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+        
+        <button><a href="./index.html">Voltar</a></button>
+    </div>
+</body>
+</html>
