@@ -13,7 +13,7 @@
 
 #------------------------------
 
-nome = input("Digite o personagem")
+nome = input("Digite o personagem: ")
 match nome: 
     case "Frodo" | "Sam":
         print("Hobbit")

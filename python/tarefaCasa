@@ -1,0 +1,19 @@
+Programa para ler nome endereço e tefone e adicionar na lista
+vai perguntar adicionar novo nome
+no final listar tudo
+
+tela 1:
+Menu
+1 - incluir
+2 - listar
+
+
+tela2:
+digite 
+nome:
+end:
+tel:
+
+
+tela, loping
+(while, input, dicionário, looping, funçoes)
