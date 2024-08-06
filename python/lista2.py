@@ -8,7 +8,4 @@ for i in range(len(personagens)):
 
 
 #for i in range(7):
-#    print("Nome:",personagens[i], "Espécie:",especies[i])
-    
- 
-        
+#'    print("Nome:",personagens[i], "Espécie:",especies[i])
