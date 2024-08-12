@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Visitantes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .card p, .card table, .card th, .card td {
+            color: #fff;
+        }
+
+        .card table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .card table th, .card table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+
+        .card table th {
+            background-color: #555;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .card table tr:nth-child(even) {
+            background-color: #444;
+        }
+
+        .card table tr:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Visitantes</h1>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>Visitantes Aguardando Autorização</h2>
+                <p>Quantidade: <span id="aguardando-autorizacao">5</span></p>
+            </div>
+
+            <div class="card">
+                <h2>Visitantes no Condomínio</h2>
+                <p>Quantidade: <span id="no-condominio">12</span></p>
+            </div>
+
+            <div class="card">
+                <h2>Visitantes Registrados no Mês Atual</h2>
+                <p>Quantidade: <span id="registrados-mes">30</span></p>
+            </div>
+
+            <div class="card">
+                <h2>Visitas Encerradas</h2>
+                <p>Quantidade: <span id="visitas-encerradas">8</span></p>
+            </div>
+
+            <div class="card">
+                <h2>Visitantes Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Horário de Entrada</th>
+                            <th>Horário de Saída</th>
+                            <th>Autorizado por</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td>123.456.789-00</td>
+                            <td>08:00</td>
+                            <td>09:30</td>
+                            <td>Sr. Pereira</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Oliveira</td>
+                            <td>987.654.321-00</td>
+                            <td>10:00</td>
+                            <td>12:00</td>
+                            <td>Sra. Costa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>
